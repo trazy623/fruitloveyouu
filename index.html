@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>果然愛你 Fruit Love You </title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 
 
@@ -23,38 +24,46 @@
 
         nav {
             width: 100%;
-            height: 55px;
+            height: 50px;
             background-color: white;
-            border-bottom: 1px solid rgb(17, 90, 14);
+            border-bottom: 2px solid rgb(17, 90, 14);
             position: fixed;
             top: 0px;
             left: 0px;
             display: flex;
             align-items: center;
             justify-content: center;
+
+            
+           
         }
 
         .logo1 {
             width: 100px;
-            height: 50px;
-            padding: 25px;
+            height: 45px;
+            padding: 15px;
             background-image: url(img/logo1.jpg);
             background-size: contain;
             background-position: center;
+            
+           
         }
 
         .tag a {
             text-decoration: none;
             color: rgb(31, 167, 49);
-            font-size: 14px;
+            font-size: 20px;
             display: flex;
             justify-content: center;
             margin-left: 10px;
+            padding: 20px;
+         
         }
 
         .logo_icon {
             width: 30px;
-            height: 20px;
+            height: 25px;
+            margin-left: 5px;
         }
 
         .br1 {
@@ -67,7 +76,8 @@
             width: 100%;
             height: 850px;
         }
-        .swiper-slide{
+
+        .swiper-slide {
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -161,33 +171,28 @@
             </a>
         </div>
         <div class="tag">
-            <a href="#flag2" c>
+            <a href="#flag2">
                 <img src="img/果然愛你-03-01.jpg" class="logo_icon">
-                愛你想梨
+                愛你產品
             </a>
         </div>
         <div class="tag">
             <a href="#flag3">
-                <img src="img/果然愛你-03-01.jpg" class="logo_icon">
-                愛你產品
-        </div>
-
-        <div class="tag">
-            <a href="#flag4">
                 <img src="img/果然愛你-03-01.jpg" class="logo_icon">
                 愛你購物
             </a>
         </div>
 
         <div class="tag">
-            <a href="#flag5">
+            <a href="#flag4">
                 <img src="img/果然愛你-03-01.jpg" class="logo_icon">
                 決定愛你
             </a>
         </div>
     </nav>
-
     <main>
+        
+        
 
         <!-- Swiper -->
         <div class="swiper-container">
@@ -212,9 +217,9 @@
         </div>
 
         <div class="me1">
-            <div id="flag1">
-                <img src="img/03-01-01 - 複製.jpg" class="love1">
-            </div>
+            <div id="flag1"></div>
+            <img src="img/03-01-01 - 複製.jpg" class="love1">
+
 
             <div class="me1_text">
                 <div class="me1_up">品牌成立故事</div>
@@ -229,7 +234,8 @@
         </div>
 
         <div class="input_1">
-            <p>愛你想梨</p>
+            <div id="flag2"></div>
+            <p>愛你產品</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bibi_arrow_down"
                 viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
@@ -238,31 +244,30 @@
         </div>
 
         <div class="br2"></div>
-        <div id="flag2"></div>
-
-
-        <div class="br3"></div>
         <div id="flag3"></div>
 
 
+        <div class="br3"></div>
+        <div id="flag4"></div>
 
 
- 
+
+
+
 
         <!-- Swiper JS -->
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-               <!-- Initialize Swiper -->
-               <script>
-                var swiper = new Swiper('.swiper-container', {
-                    effect: 'fade',
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                });
-            </script>
-
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'fade',
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        </script>
 </body>
 
 </html>
