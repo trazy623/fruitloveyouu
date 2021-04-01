@@ -12,9 +12,11 @@
 
 
 
+
     <style>
         * {
             box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
         body {
@@ -34,8 +36,8 @@
             align-items: center;
             justify-content: center;
 
-            
-           
+
+
         }
 
         .logo1 {
@@ -45,8 +47,8 @@
             background-image: url(img/logo1.jpg);
             background-size: contain;
             background-position: center;
-            
-           
+
+
         }
 
         .tag a {
@@ -57,7 +59,7 @@
             justify-content: center;
             margin-left: 10px;
             padding: 20px;
-         
+
         }
 
         .logo_icon {
@@ -105,8 +107,6 @@
             border-radius: 50px;
 
         }
-
-
         .me1_text {
             width: 1000px;
             display: flex;
@@ -114,10 +114,7 @@
             align-items: flex-start;
             font-size: 24px;
             padding: 50px;
-
         }
-
-
         .input_1 {
             width: 100%;
             display: flex;
@@ -134,17 +131,29 @@
 
         .br2 {
             background-color: white;
-            width: 100%;
-            height: 650px;
+            width: 100%
+            ;
+            height: 1000px;
             display: flex;
+            align-items: center;
+            justify-content: center;
+           
+    
 
         }
 
         .br3 {
             background-color: white;
-            width: 100%;
-            height: 650px;
+            width: 850;
+            height: 750px;
             display: flex;
+          
+        }
+
+        .love2 {
+            width: 850px;
+            height: 500px;
+
 
         }
 
@@ -191,8 +200,8 @@
         </div>
     </nav>
     <main>
-        
-        
+
+
 
         <!-- Swiper -->
         <div class="swiper-container">
@@ -208,6 +217,7 @@
         </div>
 
         <div class="input_1">
+            <div id="flag1"></div>
             <p> 愛的秘密 </p>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bibi_arrow_down"
                 viewBox="0 0 16 16">
@@ -215,12 +225,8 @@
                     d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
             </svg>
         </div>
-
         <div class="me1">
-            <div id="flag1"></div>
             <img src="img/03-01-01 - 複製.jpg" class="love1">
-
-
             <div class="me1_text">
                 <div class="me1_up">品牌成立故事</div>
                 <span> 我們是『 果然愛你 』</span>
@@ -242,13 +248,18 @@
                     d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
             </svg>
         </div>
+        <div class="br2">
+            <img src="/img/fruit love you 01_工作區域 1.jpg" class="love2">
+            <div class="love2_text">
+                <div class="love2_up">
+                </div>
+            </div>
+        </div>
 
-        <div class="br2"></div>
-        <div id="flag3"></div>
 
 
-        <div class="br3"></div>
-        <div id="flag4"></div>
+
+
 
 
 
@@ -267,6 +278,7 @@
                     prevEl: '.swiper-button-prev',
                 },
             });
+
         </script>
 </body>
 
