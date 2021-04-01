@@ -118,17 +118,13 @@
         }
 
         .input_1 {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .input_1 p {
             font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 22px;
+            font-size: 24px;
             color: rgb(17, 90, 14);
+            align-items: center;
+            margin-left: 750px;
+
+
         }
 
         .br3 {
@@ -140,31 +136,31 @@
             justify-content: center;
         }
 
+        .w3-text {
+            width: 800px;
+            margin-left: 28%;
+        }
+
         .love2 {
-            width: 75%;
+            width: 65%;
+
         }
 
         .love3 {
-            width: 75%;
+            width: 65%;
         }
 
         .love4 {
-            width: 75%;
+            width: 65%;
         }
 
         .love5 {
-            width: 75%;
+            width: 65%;
         }
 
         .love6 {
-            width: 75%;
+            width: 65%;
         }
-
-
-
-
-
-
 
         #flag1 {}
 
@@ -206,7 +202,6 @@
     <main>
 
 
-
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -223,11 +218,6 @@
         <div class="input_1">
             <div id="flag1"></div>
             <p> 愛的秘密 </p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bibi_arrow_down"
-                viewBox="0 0 16 16">
-                <path fill-rule="evenodd"
-                    d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
-            </svg>
         </div>
         <div class="me1">
             <img src="img/03-01-01 - 複製.jpg" class="love1">
@@ -245,40 +235,33 @@
 
         <div class="input_1">
             <div id="flag2"></div>
-            <p>愛你產品</p>
-            <div class="tag">
-                <a href="#flag5">
-                    <img src="img/果然愛你-03-01.jpg" class="logo_icon">
-                    我們的愛
-                </a>
-            </div>
-            <div class="tag">
-                <a href="#flag6">
-                    <img src="img/果然愛你-03-01.jpg" class="logo_icon">
-                    戀愛的你
-                </a>
-            </div>
-            <div class="tag">
-                <a href="#flag7">
-                    <img src="img/果然愛你-03-01.jpg" class="logo_icon">
-                    多想愛你
-                </a>
-            </div>
+            <h2>愛你產品</h2>
+        </div>
+        <div class="w3-text">
+            <a href="#flag5">
+                <img src="img/果然愛你-03-01.jpg" class="logo_icon">
+                我們的愛
+            </a>
+            <a href="#flag6">
+                <img src="img/果然愛你-03-01.jpg" class="logo_icon">
+                戀愛的你
+            </a>
+            <a href="#flag7">
+                <img src="img/果然愛你-03-01.jpg" class="logo_icon">
+                多想愛你
+            </a>
+            <a href="#flag8">
+                <img src="img/果然愛你-03-01.jpg" class="logo_icon">
+                最愛的你
+            </a>
 
-            <div class="tag">
-                <a href="#flag8">
-                    <img src="img/果然愛你-03-01.jpg" class="logo_icon">
-                    最愛的你
-                </a>
-            </div>
-            <div class="tag">
-                <a href="#flag9">
-                    <img src="img/果然愛你-03-01.jpg" class="logo_icon">
-                    一生愛你
-                </a>
-            </div>
-            </nav>
+            <a href="#flag9">
+                <img src="img/果然愛你-03-01.jpg" class="logo_icon">
+                一生愛你
+            </a>
+        </div>
 
+        <div class="love7">
             <div class="br3">
                 <div id="flag5"></div>
                 <img src="img2/01.jpg" class="love2">
@@ -299,21 +282,24 @@
                 <div id="flag9"></div>
                 <img src="img2/05.jpg" class="love6">
             </div>
+        </div>
 
-            <!-- Swiper JS -->
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <a href="#" class="back-to-top"> 回上一頁</a>
 
-            <!-- Initialize Swiper -->
-            <script>
-                var swiper = new Swiper('.swiper-container', {
-                    effect: 'fade',
-                    navigation: {
-                        nextEl: '.swiper-button-next',
-                        prevEl: '.swiper-button-prev',
-                    },
-                });
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-            </script>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'fade',
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+
+        </script>
 </body>
 
 </html>
